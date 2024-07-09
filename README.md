@@ -6,7 +6,7 @@
 
 ## Data Understanding
 Data yang digunakan pada proyek ini berjumlah 891 records. Data ini memiliki 6 column identik yang digunakan untuk menyimpan informasi yang dapat digunakan untuk membuat sebuah sistem rekomendasi.\
-Data ini diakses dan diunduh melalui webiste penyedia data, yaitu [Kaggle](https://www.kaggle.com/code/sinya1398/content-based-course-recommendation). Penjelasan tentang 6 variabel yand terdapat pada dataset adalah sebagai berikut:
+Data ini diakses dan diunduh melalui webiste penyedia data, yaitu [Kaggle](https://www.kaggle.com/code/sinya1398/content-based-course-recommendation). Penjelasan tentang 6 variabel yang terdapat pada dataset adalah sebagai berikut:
  - course_title: Variable ini menggunakan tipe data object dan digunakan untuk menyimpan title dari kursus yang tersedia di platform coursera
  - course_organization: Object adalah tipe data yang digunakan pada variabel ini dan variabel ini digunakan untuk menyimpan informasi tentang ornganisasi yang membuat atau menyelenggarakan kursus
  - course_Certificate_type: Variabel ini digunakan untuk menyimpan jenis sertifikasi yang terdapat pada kursus tersebut. Data type dari variabel ini adalah object.
