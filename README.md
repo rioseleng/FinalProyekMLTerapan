@@ -1,8 +1,11 @@
 # FinalProyekMLTerapan - Rio Rezky Seleng
 
 ## Project Overview
-
+Perkembangan era digital yang sangat massive saat ini menuntuk beberapa sektor untuk beradaptasi dan memanfaatkan teknologi. Salah satu bidang yang terdampak adalah pendidikan. Pendidikan online menjadi semakin populer belakangan ini, khususnya pendidikan berbasis *online course*. Coursera adalah salah satu platform yang terkenal yang menawarkan ribuan kursus yang disediakan oleh beberpaa universitas maupun organisasi ternama di seluruh dunia. Meskipun memiliki banyak pilihan, pengguna sering kesulitan menemukan kursus yang sesuai dengan kebutuhan dan minat mereka. Proyek ini bertujuan untuk mengembangkan sistem rekomendasi kursus di Coursera menggunakan teknik machine learning. Sistem ini akan membantu pengguna menemukan kursus yang relevan berdasarkan preferensi dan minat mereka, sehingga dapat meningkatkan pengalama pengguna dan efisiensi waktu dalam mencari kursus yang relevan. Dengan memanfaatkan data list course yang ada, sistem ini diharapkan dapat memberikan rekomendsai yang lebih akuran dan bermanfaat dan mendudukng pengembangan keterampilan dan karir pengguna. Proyek ini dianggap penting untuk diinisiasi karena dapat meningkatkan kepuasan dan retensi pengguana, serta membantu coursera dalam menyediakan kursus yang lebih dipersonalisasi dan efektif bagi semua penggunanya.
 ## Business Understanding
+### Problem Statement
+
+### Goals
 
 ## Data Understanding
 Data yang digunakan pada proyek ini berjumlah 891 records. Data ini memiliki 6 column identik yang digunakan untuk menyimpan informasi yang dapat digunakan untuk membuat sebuah sistem rekomendasi.\
