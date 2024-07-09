@@ -70,7 +70,7 @@ Content-based filtering adalah teknik rekomendasi yang menggunakan informasi ten
 
    |True Positive|False Positive|
    |-------------|--------------|
-   |5|0|
+   |4|1|
 
    Oleh karena itu, perhitungannya dapat diinterpretasikan sebagai berikut:
    $$precision = \frac{4}{4 + 1} = 80\%$$
