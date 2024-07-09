@@ -21,7 +21,7 @@ Data ini diakses dan diunduh melalui webiste penyedia data, yaitu [Kaggle](https
  Pada tahapan ini, saya menghapus column `unnamed` yang tidak diketahui tujuannya untuk menyimpan data apa. Column ini dihapus karena ditakutkan dapat menggangu performa model ketika dia diikutkan pada proses training model dan juga dapat membingungkan data scientist atau machine learning engineer pada saat melakukan pemodelan atau dengan kata lain akan lebih mudah bagi seseorang untuk meninterpretasikan sebuah data apabila setiap column diketahui tujuannya untuk apa. Lebih jauh lagi, proses ini dilakukan untuk mengurangi kebisingan data, mengurangi dimensionalitas, dan mempercepat proses komputasi.
  2. **Pengecekan Missing Value**\
  Pada tahapan ini dilakukan dengan memanfaatkan method `isnull` dan `sum` untuk mengidentifikasi column mana yang memiliki missing value. Tahapan ini dilakukan untuk menjaga kualitas data, mencegah bias, dan dapat meningkatkan performa model.
- 3. **Mengecek Duplikasi data**
+ 3. **Mengecek Duplikasi data**\
  Melakukan pengecekan duplikasi data dapat digunakan dengan memanfaatkan method `duplicated` yang digabungkan dengan `sum`. Hal ini dilakukan untuk memastikan bahwa tidak ada data yang redundan yang dapat mempengaruhi kinerja model dan juga memastikan konsistensi pada data.
  4. **Menghapus baris yang memiliki `course_title` tidak berbahasa inggris**\
  Pada percobaan ini, saya menggunakan library `langdetect`. Library tersebut membantu saya untuk mendeteksi baris mana saja yang menggunakan bahasa inggris pada column `course_title`. Hal ini dilakukan untuk menyesuaikan batasan yang telah disebutkan pada problem statement.
