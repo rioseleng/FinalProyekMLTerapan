@@ -40,7 +40,9 @@ Content-based filtering adalah teknik rekomendasi yang menggunakan informasi ten
 
 - Hasil _Top-N Recommendation_
 
-  Setelah data judul kursus dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar judul kursus ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.\
+  Setelah data judul kursus dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar judul kursus ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation. Hasil dari pemodelan yang saya buat adalah sebagai berikut:\
+
+  
   Kelebihan dan kekurangan dari content based filtering adalah sebagai berikut\
   |Kelebihan|Kekurangan|
   | -------- | ---------- |
