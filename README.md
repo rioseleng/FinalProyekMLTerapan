@@ -40,5 +40,13 @@ Content-based filtering adalah teknik rekomendasi yang menggunakan informasi ten
 
 - Hasil _Top-N Recommendation_
 
-  Setelah data judul kursus dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar judul kursus ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.
+  Setelah data judul kursus dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar judul kursus ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.\
+  Kelebihan dan kekurangan dari content based filtering adalah sebagai berikut\
+  |Kelebihan|Kekurangan|
+  | -------- | ---------- |
+  |1. Dapat digeneralisasi karena data pengguna lain tidak diperlukan untuk merekomendasikan sesuatu kepada pengguna tertentu|1. Sistem ini bergantung pada ketersediaan dan kualitas fitur konten. Jika atribut atau metadata tidak lengkap atau tidak akurat, rekomendasi yang dihasilkan bisa jadi kurang relevan.|
+  |2.Pemfilteran berbasis konten dapat memberikan rekomendasi yang sangat dipersonalisasi karena rekomendasi didasarkan pada preferensi spesifik pengguna.|2. Model dapat merekomendasikan item baru berdasarkan minat pengguna saat ini. Oleh karena itu, menemukan dan memperluas rekomendasi ke item lain yang berbeda preferensi, yang mungkin menarik bagi pengguna tidak mungkin dilakukan.|
+
+Hasil dari pemodelan yang saya buat adalah sebagai berikut:
+
 ## Evaluation
