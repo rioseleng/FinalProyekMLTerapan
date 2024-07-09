@@ -27,5 +27,18 @@ Data ini diakses dan diunduh melalui webiste penyedia data, yaitu [Kaggle](https
  Pada percobaan ini, saya menggunakan library `langdetect`. Library tersebut membantu saya untuk mendeteksi baris mana saja yang menggunakan bahasa inggris pada column `course_title`. Hal ini dilakukan untuk menyesuaikan batasan yang telah disebutkan pada problem statement.
  
 ## Modeling and Result
+Pada pemodelan kali ini, saya hanya menggunakan model **Content-Based Filtering** \
+Content-based filtering adalah teknik rekomendasi yang menggunakan informasi tentang item yang akan direkomendasikan serta preferensi pengguna untuk menghasilkan rekomendasi. Dalam konteks model rekomendasi kursus yang telah kita buat, model ini menganalisis berbagai atribut judul kursus. Beberapa tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan _content-based filtering_ adalah TF-IDF Vectorizer, _cosine similarity_, dan pengujian sistem rekomendasi.
 
+- TF-IDF Vectorizer
+
+  TF-IDF Vectorizer akan melakukan transformasi teks judul course menjadi bentuk angka berupa matriks.
+
+- Cosine Similarity
+
+  Cosine similarity digunakan untuk menghitung tingkat kesamaan antara dua data judul kursus dengan mengukur sudut antara kedua data tersebut. Teknik ini menghitung tingkat kesamaan dengan menggunakan sudut antara data judul kursus yang dianalisis. Hasil perhitungan ini akan memberikan nilai yang menunjukkan tingkat kesamaan antara dua judul kursus, dimana nilai yang mendekati 1 menunjukkan tingkat kesamaan yang tinggi, dan nilai yang mendekati 0 menunjukkan tingkat kesamaan yang rendah.
+
+- Hasil _Top-N Recommendation_
+
+  Setelah data judul kursus dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar judul kursus ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.
 ## Evaluation
