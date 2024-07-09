@@ -73,6 +73,6 @@ Content-based filtering adalah teknik rekomendasi yang menggunakan informasi ten
    |5|0|
 
    Oleh karena itu, perhitungannya dapat diinterpretasikan sebagai berikut:
-   $$precision = \frac{5}{5 + 0} = 100\%$$
-   Dengan begitu, diperoleh nilai _precision_ sebesar **100%**.
+   $$precision = \frac{4}{4 + 1} = 80\%$$
+   Dengan begitu, diperoleh nilai _precision_ sebesar **80%**.
    
