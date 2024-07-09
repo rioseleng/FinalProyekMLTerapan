@@ -40,11 +40,15 @@ Content-based filtering adalah teknik rekomendasi yang menggunakan informasi ten
 
 - Hasil _Top-N Recommendation_
 
-  Setelah data judul kursus dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar judul kursus ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation. Hasil dari pemodelan yang saya buat adalah sebagai berikut:
-  Test 1: A Crash Course in Data Science. Top 5 Course yang direkomendasikan oleh sistem adalah:
+  Setelah data judul kursus dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar judul kursus ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation. Salah satu hasil dari pemodelan yang saya buat adalah sebagai berikut:
+  Test: A Crash Course in Data Science. Top 5 Course yang direkomendasikan oleh sistem adalah:
   |course_title|course_organization|course_difficulty|
   | --------- | ---------- |----------|
   |1. Crash Course on Python| Google | Beginner|
+  |2. What is data science?| IBM | Beginner |
+  |3. Introduction to Data science | IBM | Beginner|
+  |4. Tools for Data Science| IBM | Beginner|
+  |5. Introduction to Data Science in Python| University of Michigan| Intermediate|
   
   Kelebihan dan kekurangan dari content based filtering adalah sebagai berikut
   |Kelebihan|Kekurangan|
@@ -53,3 +57,22 @@ Content-based filtering adalah teknik rekomendasi yang menggunakan informasi ten
   |2.Pemfilteran berbasis konten dapat memberikan rekomendasi yang sangat dipersonalisasi karena rekomendasi didasarkan pada preferensi spesifik pengguna.|2. Model dapat merekomendasikan item baru berdasarkan minat pengguna saat ini. Oleh karena itu, menemukan dan memperluas rekomendasi ke item lain yang berbeda preferensi, yang mungkin menarik bagi pengguna tidak mungkin dilakukan.|
 
 ## Evaluation
+
+   Tahap evaluasi untuk sistem rekomendasi dengan _content-based filtering_ dapat menggunakan metrik _precision_.
+
+   $$precision = \frac{TP}{TP + FP}$$
+
+   Di mana:
+   $TP =$ _True Positive_: rekomendasi yang sesuai
+   $FP =$ _False Positive_: rekomendasi yang tidak sesuai
+
+   Berdasarkan Top-N Recommendation yang diperoleh, dapat diperoleh tabel True Positive dan False Positive berdasarkan kemunculan kata "Data Science" pada colum `course_title`
+
+   |True Positive|False Positive|
+   |-------------|--------------|
+   |5|0|
+
+   Oleh karena itu, perhitungannya dapat diinterpretasikan sebagai berikut:
+   $$precision = \frac{5}{5 + 0} = 100\%$$
+   Dengan begitu, diperoleh nilai _precision_ sebesar **100%**.
+   
